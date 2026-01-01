@@ -17,7 +17,7 @@ const STORAGE_KEY = "hiddenList"; // CSV string of channel IDs
 // Optional, user-facing toggles (kept minimal). The hidden list itself is stored directly in Settings.
 export const settings = definePluginSettings({
     revealKey: {
-        description: "Reveal hotkey base key (used with Ctrl+Shift+<key>)",
+        description: "Reveal hotkey (used with Ctrl+Shift+<key>)",
         default: "K",
         type: OptionType.STRING
     },
@@ -126,11 +126,11 @@ function rebuildHiddenStyles() {
 
 export default definePlugin({
     name: PLUGIN_ID,
-    description: "Right-click to hide specific DMs. Hidden DMs are removed from the UI and can be revealed with Ctrl+Shift+<key> (default K).",
+    description: "Shift right-click to hide specific DMs. Hidden DMs are removed from the UI and can be revealed with Ctrl+Shift+<key> (default K).",
     authors: [{ name: "November", id: 138148168360656896n }],
 
     contextMenus: {
-        // Right-click on a user DM
+        // Shift right-click on a user DM
         "user-context": ((children: any[], props: any) => {
             try {
                 if (!shouldShowShiftMenuItem()) return children;
@@ -158,7 +158,7 @@ export default definePlugin({
             return children;
         }) as unknown as NavContextMenuPatchCallback,
 
-        // Right-click on a group DM
+        // Shift right-click on a group DM
         "gdm-context": ((children: any[], props: any) => {
             try {
                 if (!shouldShowShiftMenuItem()) return children;
