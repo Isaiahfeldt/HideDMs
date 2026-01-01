@@ -1,6 +1,6 @@
 # HideDMs (Vencord Plugin)
 
-**Hide specific DM threads** via right‑click. Hidden DMs are visually removed from the DM list until revealed or unhidden.
+**Hide specific DM threads** via shift right‑click. Hidden DMs are visually removed from the DM list until revealed or unhidden.
 
 ## Features
 - Right‑click any DM → **Hide/Unhide**
