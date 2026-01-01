@@ -1,0 +1,14 @@
+{
+    "name": "HideDMs",
+    "description": "Right‑click to hide specific DMs: fully removed from UI.",
+    "authors": [
+        {
+            "name": "N.ovember",
+            "id": "138148168360656896"
+        }
+    ],
+    "version": "0.1.0",
+    "file": "index.ts",
+    "tags": ["dm", "privacy", "ui", "context-menu"],
+    "source": "https://docs.vencord.dev/plugins/"
+}
